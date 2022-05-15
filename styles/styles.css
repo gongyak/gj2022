@@ -288,6 +288,7 @@ nav .section_normal:hover {
 }
 
 .pledge_more {
+    display: none !important;
     text-align: center;
 }
 
@@ -298,7 +299,8 @@ nav .section_normal:hover {
 }
 
 .links {
-    display: none;
+    /* display: none; */
+    display: block;
     transition: 0.25s;
 }
 
@@ -345,6 +347,7 @@ nav .section_normal:hover {
 }
 
 .pledge_fold {
+    display: none !important;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;

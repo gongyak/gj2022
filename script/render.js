@@ -200,7 +200,7 @@ const expandPledge = (index) => {
         element = document.getElementById("link_" + index_temp)
         
         if (element) {
-            element.style.display = "none"
+            element.style.display = "block"
         }
         
         element = document.getElementById("more_" + index_temp)
@@ -216,7 +216,7 @@ const expandPledge = (index) => {
     element.style.display = "block"
 
     element = document.getElementById("more_" + index)
-    element.style.display = "none"
+    element.style.display = "block"
 
     element = document.getElementById('pledge_' + index)
     scrollToElement(element)
@@ -247,7 +247,7 @@ const foldPledge = (index) => {
     var element = document.getElementById("link_" + index)
     
     if (element) {
-        element.style.display = "none"
+        element.style.display = "block"
         // console.log(element)
     }
     
