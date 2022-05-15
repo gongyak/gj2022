@@ -1,0 +1,455 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    font-family: "Noto Sherif KR", sans-serif !important;
+    background: #ffffff;
+    background-color: #ffffff;
+	border-style: none;
+	margin: auto;
+	max-width: 750px;
+    word-break: keep-all;
+}
+
+.noti {
+    font-size: small;
+    color: black;
+    background-color: rgb(234, 234, 234);
+    padding: 15px;
+    margin-top: 15px;
+    line-height: 160%;
+}
+
+header {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: #0042A1;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .title {
+    font-weight: bold;
+    font-size: x-large;
+    color: #0042A1;
+
+    /* border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #0042A1;
+    padding-left: 10px; */
+}
+
+header img.logo {
+    margin-right: 1px;
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+    transform: translate(0px, -3px);
+}
+
+header img.title {
+    margin-right: 1px;
+    width: 88px;
+    /* height: 28px; */
+    vertical-align: middle;
+    transform: translate(0px, -3px);
+    background-color: #193B82;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+header .banner img {
+    width: 100%;
+}
+
+header .subtitle {
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(99, 99, 99);
+}
+
+header .charnum {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #F8D548;
+    -webkit-text-stroke: 1px black;
+}
+
+nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 180%;   
+}
+
+nav img {
+    width: 20px;
+    opacity: 0.75;
+}
+
+nav .sections {
+    margin-bottom: 10px;
+    text-align: center;
+    text-align: center;
+
+    width: 100%;
+    border-radius: 5px;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+nav .sections div {
+
+    position: relative;
+    display: inline-block;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 40%;
+    text-align: center;
+
+    transition: 0.25s;
+}
+
+nav .section_selected {
+    color: white;
+    /* background-color: rgb(99, 99, 99); */
+    background-color: rgb(69, 69, 69);
+
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 10px;
+
+    /* transform: translate(0px, -2px); */
+}
+
+nav .section_selected:hover {
+    transform: translate(0px, -3px);
+}
+
+nav .section_normal {
+    color: rgb(68, 68, 68);
+    /* transform: translate(0px, 2px); */
+
+    border-color: #F3F3F4;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+nav .section_normal:hover {
+    color: black;
+    transform: translate(0px, -3px);
+
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 10px;
+}
+
+#tags {
+    clear: both;
+    /* margin-top: 25px; */
+    /* white-space: nowrap;
+    overflow: auto;  */
+    margin: 5px;
+}
+
+#tags button {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    font-size: large;
+    transition: 0.25s;
+    margin: 4px 4px 4px 4px;
+
+    border-radius: 50vh;
+}
+
+.tag {
+    /* color: #3982C1; */
+    color: black;
+    background-color: #F2F9FE;
+}
+
+.tag:hover {
+    /* color: #2C679D; */
+    color: black;
+    background-color: #E3F1FD;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tag_special {
+    font-weight: bold;
+    color: rgb(255, 0, 242);
+    background-color: rgb(247, 247, 247);
+}
+
+.tag_special:hover {
+    color: black;
+    background-color: darkgray;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tag_selected {
+    background-color: #00A0E2;
+    color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#pledges_message {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: x-large;
+    font-weight: normal;
+    color: rgb(68, 68, 68);
+    line-height: 200%;
+}
+
+#pledges_message span {
+    color: #00A0E2;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#pledges_message .justbold {
+    color: rgb(68, 68, 68);
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.pledge {
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0 5px 5px #F3F3F4;
+    border-radius: 15px;
+    border-color: #F3F3F4;
+    border-width: 1px;
+    border-style: solid;
+    transition: 0.25s;
+}
+
+.pledge:hover {
+    background-color: #E3F1FD;
+}
+
+.pledge_expandable {
+    padding: 5px;
+    margin: 5px;
+}
+ 
+.pledge_intro {
+    padding: 10px;
+    margin: 5px;
+}
+
+.pledge_poster {
+    float: inline-start;
+    width: 50px;
+}
+
+.pledge_poster img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.pledge_text {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.pledge_location {
+    color: #00A0E2;
+    font-size: large;
+    font-weight: medium;
+    margin-bottom: 5px;
+}
+
+.pledge_title {
+    margin-bottom: 5px;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.pledge_description {
+    margin-top: 15px; 
+    font-size: large;
+    line-height: 150%;
+    color: rgb(112, 110, 110);   
+}
+
+.pledge_more {
+    text-align: center;
+}
+
+.pledge_more img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.55;
+}
+
+.links {
+    display: none;
+    transition: 0.25s;
+}
+
+.link_website {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.link_website a {
+    text-decoration: none;
+    color: white;
+    background-color:#0B68B3;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    line-height: 180%;
+}
+
+.link_website a img {
+    width: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.links div {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.links img {
+    width: 100%;
+    max-width: 950px;
+}
+
+.links iframe {
+    width: 100%;
+    max-width: 950px;
+    height: 320px;
+}
+
+.pledge_fold {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pledge_fold img {
+    width: 15px;
+    opacity: 0.35;
+    margin-right: 5px;
+}
+
+#pledges_gotop {
+    text-align: center;
+    margin: 35px 15px 35px 15px ;
+    padding: 10px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: lightgray;
+    transition: 0.25s;
+    color: #00A0E2;
+}
+
+#pledges_gotop:hover {
+    background-color: #E3F1FD;
+}
+
+#pledges_gotop img {
+    width: 35px;
+    opacity: 0.45;
+}
+
+#pledges_gotop_tags {
+    display: none !important;
+    margin-top: 30px;
+    color: rgb(112, 110, 110);
+    font-size: small;
+    line-height: 150%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: small;
+    
+    color: rgb(112, 112, 112);
+}
+
+footer h4 {
+    margin-top: 15px;
+}
+
+footer a {
+    color: rgb(112, 112, 112);
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer .sharing {
+    text-align: center;
+    margin: 5px;
+}
+
+footer .sharing img {
+    padding:15px;
+    width: 32px;
+}
+
+footer .credit img {
+    width: 90%;
+    max-width: 90px;
+    /* border-radius: 50%;    */
+    margin-top: 15px;
+}
+
+footer .creators {
+    width: 100%;
+
+}
+
+footer .creator {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+footer .name {
+    font-weight: bold;
+    font-size: large;
+}
+
+footer .thanks {
+    clear: both;
+}
+
+
+footer .credit a {
+    text-decoration: none;
+}
+
+footer .credit {
+    margin-bottom: 25px;
+}
